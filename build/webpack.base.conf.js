@@ -13,7 +13,9 @@ function resolve (dir) {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/main.js'
+    app: './src/main.js',
+    './':'./static/main.js',
+    './':'./static/package.json'
   },
   output: {
     path: config.build.assetsRoot,

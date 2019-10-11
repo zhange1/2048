@@ -50,7 +50,7 @@
     },
     methods: {
       start() {
-        console.log('this',this)
+        // console.log('this',this)
         this.game = new Game()
         this.game.newItem(this.arr)
       },
@@ -75,7 +75,7 @@
   window.onkeydown = function (e) {
     switch (e.keyCode) {
       case 37:
-        console.log('left',window.vm)
+        // console.log('left')
         window.vm.game.moveLeft(window.vm.arr)
         break;
       case 38:
